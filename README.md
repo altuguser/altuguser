@@ -1,11 +1,9 @@
 select * from film
-where lenght > 60 and lenght <75;
+where replacement_cost between 12.98 and 16.99
 
-selet * from film
-where rental_Rate = 0.99 and replacement_cost = 12.99 or replacement_cost = 28.99
+select first_name, last_name from actor
+where in first_name 'Penelope' or 'Nick' or 'Ed'
 
-select * from customers
-where first_name = 'Mary'
 
 select * from film
-where not length > 50 and (not rental_rate = 2.99 or rental_rate = 4.99)
+where in (rental_rate(0.99, 2.99, 4.99)) and where in replacement_cost (12.99, 15.99, 28.99)
